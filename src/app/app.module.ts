@@ -5,6 +5,7 @@ import { AppComponent } from './app.component';
 import { TopBarComponent } from './top-bar/top-bar.component';
 
 import { RouterModule } from '@angular/router';
+import { ProductListComponent } from './product-list/product-list.component';
 
 @NgModule({
    declarations: [
@@ -13,7 +14,9 @@ import { RouterModule } from '@angular/router';
    ],
    imports: [
       BrowserModule,
-      RouterModule
+      RouterModule.forRoot([
+         {path: '', component: ProductListComponent}
+      ])
    ],
    providers: [],
    bootstrap: [
