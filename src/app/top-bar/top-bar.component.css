@@ -1,24 +1,18 @@
 .top-bar {
-    display: flex;
-    background-color: #1976d2;
-    padding: 20px;
-    justify-content: space-between;    
+  display: flex;
+  background-color: #1976d2;
+  padding: 20px;
+  justify-content: space-between;
 }
 
 .top-bar__logo {
-    font-size: 32px;
-    color: white;
-    text-decoration: none;
+  font-size: 32px;
+  color: white;
+  text-decoration: none;
 }
 
 .top-bar__cart {
-    text-decoration: none;
-    background-color: white;
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    padding: 10px;
-    border-radius: 3px;
-    color: #1976d2;
-    font-size: 14px;
+  background-color: white;
+  color: #1976d2;
+  font-size: 14px;
 }
