@@ -1,0 +1,32 @@
+.list__header {
+  font-size: 20px;
+  color: #616161;
+  font-weight: normal;
+}
+
+.list__product {
+  margin: 14px 0;
+}
+
+.list__name {
+  cursor: pointer;
+  color: #1976d2;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.list__description {
+  color: #616161;
+  font-size: 14px;
+}
+
+.list__share {
+  padding: 10px;
+  border-radius: 3px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  background-color: #1976d2;
+  color: white;
+}

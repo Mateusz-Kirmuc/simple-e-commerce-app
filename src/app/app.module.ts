@@ -9,8 +9,9 @@ import { ProductListComponent } from './product-list/product-list.component';
 
 @NgModule({
    declarations: [
-      AppComponent,
-      TopBarComponent
+     AppComponent,
+     TopBarComponent,
+     ProductListComponent
    ],
    imports: [
       BrowserModule,
