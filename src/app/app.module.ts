@@ -6,12 +6,14 @@ import { TopBarComponent } from './top-bar/top-bar.component';
 
 import { RouterModule } from '@angular/router';
 import { ProductListComponent } from './product-list/product-list.component';
+import { ProductDetailsComponent } from './product-details/product-details.component';
 
 @NgModule({
    declarations: [
      AppComponent,
      TopBarComponent,
-     ProductListComponent
+     ProductListComponent,
+     ProductDetailsComponent
    ],
    imports: [
       BrowserModule,
