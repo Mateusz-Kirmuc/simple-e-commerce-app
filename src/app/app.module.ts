@@ -18,7 +18,8 @@ import { ProductDetailsComponent } from './product-details/product-details.compo
    imports: [
       BrowserModule,
       RouterModule.forRoot([
-         {path: '', component: ProductListComponent}
+        {path: '', component: ProductListComponent},
+        {path: 'product-details/:productIndex', component: ProductDetailsComponent}
       ])
    ],
    providers: [],
