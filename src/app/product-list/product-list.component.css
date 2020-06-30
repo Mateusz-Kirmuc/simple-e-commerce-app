@@ -1,6 +1,5 @@
 .list__header {
   font-size: 20px;
-  color: #616161;
   font-weight: normal;
 }
 
@@ -16,7 +15,6 @@
 }
 
 .list__description {
-  color: #616161;
   font-size: 14px;
 }
 

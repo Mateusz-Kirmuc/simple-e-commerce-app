@@ -3,5 +3,5 @@
 <div class="list__product" *ngFor="let product of products; index as productIndex">
   <a [routerLink]="['product-details', productIndex]" class="list__name">{{ product.name }}</a>
   <p class="list__description">{{ product.description }}</p>
-  <button class="btn list__share" (click)="handleShareBtnClick()">Share</button>
+  <button class="btn btn-blue" (click)="handleShareBtnClick()">Share</button>
 </div>
