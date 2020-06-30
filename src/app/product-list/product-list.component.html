@@ -4,4 +4,5 @@
   <a [routerLink]="['product-details', productIndex]" class="list__name">{{ product.name }}</a>
   <p class="list__description">{{ product.description }}</p>
   <button class="btn btn-blue" (click)="handleShareBtnClick()">Share</button>
+  <app-product-notifications [productPrice]="product.price"></app-product-notifications>
 </div>
