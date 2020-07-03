@@ -1,4 +1,4 @@
-<h1 class="list__header">Products</h1>
+<h1 class="header">Products</h1>
 
 <div class="list__product" *ngFor="let product of products; index as productIndex">
   <a [routerLink]="['product-details', productIndex]" class="list__name">{{ product.name }}</a>

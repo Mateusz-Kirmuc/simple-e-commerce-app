@@ -1,0 +1,20 @@
+<h1 class="header">Cart</h1>
+<div *ngFor="let product of cart" class="cart__product-container">
+    <span>{{ product.name }}</span>
+    <span>${{ product.price }}</span>
+</div>
+<form [formGroup]="shippingForm" (ngSubmit)="onSubmit()">
+  <div>
+    <label>
+      Name:
+      <input class="input" type="text" formControlName="name">
+    </label>
+  </div>
+  <div>
+    <label>
+      Address:
+      <input class="input" type="text" formControlName="address">
+    </label>
+  </div>
+  <button type="submit" class="btn btn-blue">Purchase</button>
+</form>

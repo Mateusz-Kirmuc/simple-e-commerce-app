@@ -1,6 +1,6 @@
-<h1 class="details__header">Product Details</h1>
+<h1 class="header">Product Details</h1>
 <h2 class="details__subheader">{{product.name}}</h2>
 <p>${{product.price}}</p>
 <p>{{product.description}}</p>
-<button class="btn btn-blue">Buy</button>
+<button class="btn btn-blue" (click)="addToCart(product)">Buy</button>
 

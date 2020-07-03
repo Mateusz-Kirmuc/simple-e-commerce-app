@@ -8,6 +8,9 @@ import { RouterModule } from '@angular/router';
 import { ProductListComponent } from './product-list/product-list.component';
 import { ProductDetailsComponent } from './product-details/product-details.component';
 import { ProductNotificationsComponent } from './product-notifications/product-notifications.component';
+import { CartComponent } from './cart/cart.component';
+import {CartService} from './cart.service';
+import {ReactiveFormsModule} from '@angular/forms';
 
 @NgModule({
    declarations: [
@@ -15,16 +18,19 @@ import { ProductNotificationsComponent } from './product-notifications/product-n
      TopBarComponent,
      ProductListComponent,
      ProductDetailsComponent,
-     ProductNotificationsComponent
+     ProductNotificationsComponent,
+     CartComponent
    ],
-   imports: [
-      BrowserModule,
-      RouterModule.forRoot([
-        {path: '', component: ProductListComponent},
-        {path: 'product-details/:productIndex', component: ProductDetailsComponent}
-      ])
-   ],
-   providers: [],
+  imports: [
+    BrowserModule,
+    RouterModule.forRoot([
+      {path: '', component: ProductListComponent},
+      {path: 'product-details/:productIndex', component: ProductDetailsComponent},
+      {path: 'cart', component: CartComponent}
+    ]),
+    ReactiveFormsModule
+  ],
+   providers: [CartService],
    bootstrap: [
       AppComponent
    ]
