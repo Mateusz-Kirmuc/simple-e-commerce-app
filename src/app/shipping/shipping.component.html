@@ -1,1 +1,6 @@
-<p>shipping works!</p>
+<h1 class="header">Shipping prices</h1>
+
+<div class="shipping__shipping-container" *ngFor="let shipping of shippingData;">
+  <span>{{ shipping.type }}</span>
+  <span>${{ shipping.price }}</span>
+</div>
