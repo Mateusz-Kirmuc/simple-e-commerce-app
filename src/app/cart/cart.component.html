@@ -1,8 +1,10 @@
 <h1 class="header">Cart</h1>
 
-<a [routerLink]="['/shipping']">Shipping prices</a>
+<p>
+  <a [routerLink]="['/shipping']" class="link">Shipping prices</a>
+</p>
 
-<div *ngFor="let product of cart" class="cart__product-container">
+<div *ngFor="let product of cart" class="list-container">
     <span>{{ product.name }}</span>
     <span>${{ product.price }}</span>
 </div>
