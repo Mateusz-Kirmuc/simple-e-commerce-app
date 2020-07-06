@@ -11,6 +11,7 @@ import { ProductNotificationsComponent } from './product-notifications/product-n
 import { CartComponent } from './cart/cart.component';
 import {CartService} from './cart.service';
 import {ReactiveFormsModule} from '@angular/forms';
+import { ShippingComponent } from './shipping/shipping.component';
 
 @NgModule({
    declarations: [
@@ -19,14 +20,16 @@ import {ReactiveFormsModule} from '@angular/forms';
      ProductListComponent,
      ProductDetailsComponent,
      ProductNotificationsComponent,
-     CartComponent
+     CartComponent,
+     ShippingComponent
    ],
   imports: [
     BrowserModule,
     RouterModule.forRoot([
       {path: '', component: ProductListComponent},
       {path: 'product-details/:productIndex', component: ProductDetailsComponent},
-      {path: 'cart', component: CartComponent}
+      {path: 'cart', component: CartComponent},
+      {path: 'shipping', component: ShippingComponent}
     ]),
     ReactiveFormsModule
   ],
